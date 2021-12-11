@@ -100,11 +100,6 @@ T = 100
 gamma_0 = 2.0
 d = 2.0
 [wt, loss, tt] = sgd_epoch(w, T, gamma_0, d)
-plt.plot(loss)
-plt.xlabel('iterations')
-plt.ylabel('empirical loss')
-plt.title('T= 1')
-plt.show()
 print('train err=', pred(wt, train_data))
 print('test err=', pred(wt, test_data))
 
